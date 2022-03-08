@@ -1,0 +1,105 @@
+p{
+    color:yellow;
+    font-size:23px;
+    font-weight: normal;
+    }
+ul{
+    color:yellow;
+    font-size:23px;
+    font-weight: normal;
+    }
+.Boldify {
+  font-size: 20px;
+  font-weight: bold;
+}
+.paragraph {
+  font-size: 22px;
+  font-style: italic;
+}
+.background {
+  background-color: red;
+}
+.button {
+  height: 25px;
+  width: 100%;
+  color: yellow;
+  background-color: red;
+  border-radius: 20px;
+  border-color: yellow;
+}
+.banner {
+  height: 50px;
+  width: 100%;
+  background-color: red;
+  color: yellow;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.questions {
+  border-radius: 15px;
+  border-color: yellow;
+  border-style: dashed;
+  padding: 15px;
+}
+.question-type {
+  font-size: 18px;
+  color: yellow;
+  font-weight: bold;
+}
+.image {
+  border: 10px none yellow;
+  padding: 10px;
+}
+.navitem {
+  list-style-type: none;
+  display: inline;
+  margin-right: 3px;
+  padding: 2px 5px;
+}
+.navmenu {
+  font-size: 20px;
+  text-align: center;
+  color: red;
+  background-color: yellow;
+}
+.rightside {
+  float: right;
+  width: 30%;
+}
+.leftside {
+  float: left;
+  width: 68%;
+}
+.header1 {
+  color: yellow;
+  font-family: sans-serif;
+}
+.header2 {
+  color: yellow;
+  font-family: serif;
+}
+.header3 {
+  color: yellow;
+  font-family: sans-serif;
+}
+.clearfloat {
+  clear: right;
+  clear: left;
+}
+.listImages {
+  width: 300px;
+}
+.BigImages {
+  width: 350px;
+}
+th {
+  color: yellow;
+  background-color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+.TinyImages {
+  width: 200px;
+  height: 200px;
+}

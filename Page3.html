@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <title>Legoman's Friends</title>
+    <script>
+      function Response() {
+        var radio = document.getElementsByName("Facts");
+        var selection = false;
+        var message = "";
+        for( var i=0; i<radio.length; i++) {
+          if(radio[i].value == "Yep!" && radio[i].checked == true) {
+            selection = true;
+          }
+        }
+          if(selection == true) {
+            message = message + "<b><p style='color:yellow'>That's correct (sorry, Dinoboi)! </p></b>"
+          } else {
+            message = message + "<b><p style='color:yellow'>Nope. It was someone else. </p></b>"
+          }
+          document.getElementById("Answer").innerHTML = message;
+      }
+      function AnswerOne() {
+        var radios = document.getElementsByName("One");
+        var select = false;
+        var message = "";
+        for( var i=0; i<radios.length; i++) {
+          if(radios[i].value == "Right!" && radios[i].checked == true) {
+            select = true;
+          }
+        }
+        if(select == true) {
+          message = message + "<b><p style='color:yellow'>That's one! Scroll down for Part 2. </p></b>"
+        } else {
+          message = message + "<b><p style='color:yellow'>Nope! Try again! </p></b>"
+        }
+        document.getElementById("Part1").innerHTML = message;
+      }
+      function AnswerTwo() {
+        var radioed = document.getElementsByName("Two");
+        var selector = false;
+        var message = "";
+        for( var i=0; i<radioed.length; i++) {
+          if(radioed[i].value == "Correctamundo!" && radioed[i].checked == true) {
+            selector = true;
+          }
+        }
+        if(selector == true) {
+          message = message + "<b><p style='color:yellow'>Yes! </p></b>"
+        } else {
+          message = message + "<b><p style='color:yellow'>No way, José! </p></b>"
+        }
+        document.getElementById("Part2").innerHTML = message;
+      }
+      function Reply() {
+        var radioing = document.getElementsByName("Wired");
+        var selects = false;
+        var message = "";
+        for( var i=0; i<radioing.length; i++) {
+          if(radioing[i].value == "Yes" && radioing[i].checked == true) {
+            selects = true;
+          }
+        }
+        if(selects == true) {
+          message = message + "<b><p style='color:yellow'>Yep. The were friends for one year before they met me.</p></b>"
+        } else {
+          message = message + "<b><p style='color:yellow'>I don't think they even met.</p></b>"
+        }
+        document.getElementById("Odd").innerHTML = message;
+      }
+      function answers() {
+      var radios = document.getElementsByName("Trivia");
+      var select = false;
+      var message = "";
+      for( var i=0; i<radios.length; i++) {
+        if(radios[i].value == "Right you are!" && radios[i].checked == true) {
+          select = true;
+        }
+      }
+      if(select == true) {
+        message = message + "<b><p style='color:yellow'> Correct! </p> </b>"
+        } else {
+          message = message + "<b><p style='color:yellow'>Not true</p> </b>"
+        }
+        document.getElementById("reply").innerHTML = message;
+    }
+    function MAF() {
+      var radoi = document.getElementsByName("NHL");
+      var seletc = false;
+      var message = "";
+      for( var i=0; i<radoi.length; i++) {
+        if(radoi[i].value == "BOOM!" && radoi[i].checked == true) {
+          seletc = true;
+        }
+      }
+      if(seletc == true) {
+        message = message + "<b><p style='color:yellow'>Right you are!</p> </b>"
+        } else {
+          message = message + "<b><p style='color:yellow'>Nope. Someone else is doing that.</p> </b>"
+        }
+        document.getElementById("Hockey").innerHTML = message;
+    }
+    function Easy() {
+      var rad = document.getElementsByName("Freebie");
+      var selet = false;
+      var message = "";
+      for( var i=0; i<rad.length; i++) {
+        if(rad[i].value == "allCorrect" && rad[i].checked == true) {
+          selet = true;
+        }
+      }
+      if(selet == true) {
+        message = message + "<b><p style='color:yellow'>Yes! (Hint: they're all correct)</p> </b>"
+        } else {
+          message = message + "<b><p style='color:yellow'>How'd you do that?</p> </b>"
+        }
+        document.getElementById("All").innerHTML = message;
+    }
+    </script>
+  </head>
+  <body class="background">
+    <header class="banner">
+      <marquee> Welcome to Legoman's friends</marquee>
+      <nav>
+        <ul class="navmenu">
+          <li class="navitem"> <a href="Page1.html"> The Legacy of Legoman</a> </li>
+          <li class="navitem"> <a href="Page2.html"> Legoman's projects</a> </li>
+          <li class="navitem"> <a href="Page4.html"> Fanarts of Legoman</a> </li>
+        </ul>
+      </nav>
+    </header> <br>
+    <h1 class="header1"> Legoman's Friends</h1>
+    <hr/>
+    <center> <img class="image" src="https://cdn2.scratch.mit.edu/get_image/user/74239849_60x60.png"/> </center>
+    <hr/>
+    <p class="clearfloat">If there was one thing Legoman liked to do better than creating projects, it was talking to his friends. "I have good friends" was one of Legoman's famous quotes. Let's meet some of Legoman's friends.</p>
+    <div class="leftside">
+      <table border="2">
+    <tr>
+      <th>Friend, Username, and Link</th>
+      <th>What Legoman Thinks of Them</th>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/NotYourAverageAnime"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/62667788_90x90.png?v="/></a></center><br/>
+      <center><p>NotYourAverageAnime</p></center></td>
+      <td><center><h3 class="header3">Opinion about NotYourAverageAnime:</h3></center><br/>
+      <p>Average made me who I am today. This guy has done many voice acts for me and has never complained ONCE. He also prevented me from leaving Scratch many times and deleting my account. He's been so kind to me so many times, the only way I can repay him is to convince griffpatch to follow him.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/speedyhiker2010"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/40019121_90x90.png?v=" /></a></center><br/>
+      <center><p>speedyhiker2010</p></center></td>
+      <td><center><h3 class="header3">Opinion about speedyhiker2010:</h3></center><br/>
+      <p>speedyhiker is a good friend to be around. He likes and favors all my projects and he creates alts that will follow me. Every time I was with speedy, I would always expect a heart or star arrive on my profile. Sure enough, he does every time.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/DaBrokenToast"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/78253971_90x90.png?v=" /></a></center><br/>
+      <center><p>DaBrokenToast</p></center></td>
+      <td><center><h3 class="header3">Opinion about DaBrokenToast:</h3></center><br/>
+      <p>DaBrokenToast is a very kind person to have. She would stand up for her friends and would defend her sister when her sister was in trouble. She was very good at giving compliments, too. If compliments were bricks, DaBrokenToast would have a wall.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/-Sketched"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/86702976_90x90.png?v=" /></a></center><br/>
+      <center><p>-Sketched (formerly -Sawk-)</p></center></td>
+      <td><center><h3 class="header3">Opinion about -Sawk-:</h3></center><br/>
+      <p>I've known -Sawk- ever since I became Legoman_Animator. -Sawk- is kind to his friends and barely had any enemies. He abided the community guidelines and was good in the eyes of a Scratch Team member.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/N0tT0kyo"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/77109617_90x90.png?v=" /></a></center><br/>
+      <center><p>N0tT0kyo</p></center></td>
+      <td><center><h3 class="header3">Opinion about N0tT0kyo:</h3></center><br/>
+      <p>N0tT0kyo is DaBrokenToast's sister. N0tT0kyo is a lot like her sister, but with one difference. She would go to any Scratcher's profile and compliment him/her. </p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/Dinoboi_Animations"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/54412977_90x90.png?v=" /></a></center><br/>
+      <center><p>Dinoboi_Animations</p></center></td>
+      <td><center><h3 class="header3">Opinion about Dinoboi_Animations:</h3></center><br/>
+      <p>Dinoboi. Boy, where do I start? Dinoboi was very kind to his friends and would do anything for them, from liking a project to following them. He is focused on making his friends famous. He liked my fanimation I make for him, followed me, and would like to talk about me (along with some other people) on his alt. He wouldn't be embarrased to call us "his friends" either. So to Dinoboi, I salute you.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/AwesomeAnim8or"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/69706507_90x90.png?v=" /></a></center><br/>
+      <center><p>AwesomeAnim8or</p></center></td>
+      <td><center><h3 class="header3">Opinion about AwesomeAnim8or</h3></center><br/>
+      <p>AwesomeAnim8or is kind to everyone on Scratch. He didn't really care about how many follows he got on Scratch. It was how many friends he could make on Scratch. I remember the day I met him. We became friends in an instant.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/Mariobrosfanclub"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/71064101_90x90.png?v=" /></a></center><br/>
+      <center><p>Mariobrosfanclub</p></center></td>
+      <td><center><h3 class="header3">Opinion about Mariobrosfanclub:</h3></center><br/>
+      <p>Mariobrosfanclub was my first friend on Scratch ever. We were both learning about Scratch at the time, and both relied on each other to get out of a sticky situation. We don't really talk anymore, but I will always have the memories of him.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/Night_vison31"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/78993141_90x90.png?v=" /></a></center><br/>
+      <center><p>Night_vison31</p></center></td>
+      <td><center><h3 class="header3">Opinion about Night_vison31:</h3></center><br/>
+      <p>I'm not really sure how we became friends. One second, we didn't know anything about the other person and the next, we're friends. He's a nice guy, though.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/marshmello3_4"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/62169458_90x90.png?v=" /></a></center><br/>
+      <center><p>marshmello3_4</p></center></td>
+      <td><center><h3 class="header3">Opinion about marshmello3_4:</h3></center><br/>
+      <p>marshemllo3_4 is a fan of mine. He told me that when I was about to leave Scratch. It was just when I needed it. And when I asked him to collab with me, he freaked out in a good way. I am thinking about making another collab with him, as a matter of fact. But this time, he animates and I give the idea.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/MIK4IL"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/69377821_90x90.png?v=" /></a></center><br/>
+      <center><p>MIK4IL</p></center></td>
+      <td><center><h3 class="header3">Opinion about MIK4IL:</h3></center><br/>
+      <p>He's a nice guy and he kind of reminds me of me sometimes. He likes Dinoboi, I'm friends with Dinoboi. He sometimes uses Dinoboi's OC, my OC is based on Dinoboi. Neither of us can speak Spanish, no matter how hard we try. And we are constantly looking for people to talk to on Scratch.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/AlexStudiosinc"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/39343793_90x90.png?v=" /></a></center><br/>
+      <center><p>AlexStudiosInc</p></center></td>
+      <td><center><h3 class="header3">Opinion about AlexStudiosInc:</h3></center><br/>
+      <p>AlexStudiosInc is one of the original characters in a series made by huntedskelly. Now, AlexStudiosInc is in many different serieses. AlexStudiosInc is also a great artist. It's a surprise he's not famously known as the artist of Scratch.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/Animator-Girl-321"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/79432691_90x90.png?v=" /></a></center><br/>
+      <center><p>Animator-Girl-321</p></center></td>
+      <td><center><h3 class="header3">Opinion about Animator-Girl-321:</h3></center><br/>
+      <p>I was Animator-Girl's second or third friend on Scratch. We meet when she wanted to collab with someone. The disadventage to being new to Scratch: No one will collab with you. But I said yes, and Animator-Girl was quite pleased. I don't really know if that collab is getting worked on anymore. I don't even think we came up with an idea.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/gamerguy671"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/78625555_90x90.png?v=" /></a></center><br/>
+      <center><p>gamerguy671</p></center></td>
+      <td><center><h3 class="header3">Opinion about gamerguy671:</h3></center><br/>
+      <p>gamerguy671 is another fan of mine. In fact, he is my biggest fan and he rejects the fact that anyone else can be a bigger fan of mine. One time, he got excited when I said "hello" on his profile. He still gets excited from time to time. And I like it because it makes me feel wanted on Scratch.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/dalmatian31"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/64479565_90x90.png?v=" /></a></center><br/>
+      <center><p>dalmatian31</p></center></td>
+      <td><center><h3 class="header3">Opinion about dalmatian31:</h3></center><br/>
+      <p>I have known dalmatian31 since I started Scratch as Linkinparklover2134. He and I played Truth or Dare each time we walked onto each other's profile. In fact, it was my idea to get him to change his pfp. And I don't think dalmatian31 has ever changed it from there. So, his pfp is a symbol of our friendship.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/mccdag"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/60414553_90x90.png?v=" /></a></center><br/>
+      <center><p>mccdag</p></center></td>
+      <td><center><h3 class="header3">Opinion about mccdag:</h3></center><br/>
+      <p>There's not really much to say about mccdag. He just followed me, we talked, did a race to 500, and a collab together. Oh, and it's fun to say his username. mccdag. mccdag. (laughs)</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/FoamyOcean_Gamer"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/76881119_90x90.png?v=" /></a></center><br/>
+      <center><p>FoamyOcean_Gamer</p></center></td>
+      <td><center><h3 class="header3">Opinion about FoamyOcean_Gamer:</h3></center><br/>
+      <p>She has everything anybody ever wants in a good friend. She listens to people's problems, she defends her friends against other people, and she knows she's done a good job when a person is happy.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/lisabc"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/34846342_90x90.png?v=" /></a></center><br/>
+      <center><p>lisabc</p></center></td>
+      <td><center><h3 class="header3">Opinion about lisabc:</h3></center><br/>
+      <p>lisabc is my most famous friend on Scratch (don't tell Dinoboi). She is always dedicated to replying to everyone's comments. Hmm, maybe that's why I don't get half of the comments posted on her profile. But anyway, lisabc was always there for me. She stood by my side, and she helped me understand other people's point of view.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/YOU_MATTER_ALOT"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/69525945_90x90.png?v=" /></a></center><br/>
+      <center><p>YOU_MATTER_ALOT</p></center></td>
+      <td><center><h3 class="header3">Opinion about YOU_MATTER_ALOT:</h3></center><br/>
+      <p>YOU_MATTER_ALOT is the kindest person Scratch has ever seen. Want proof? Look at her username. She would do anything just to make a person smile. Need a hug? No problem. Want a compliment? She hands them out like Target gift cards. She is the best thing that happened to Scratch.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/sardines1/"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/69752664_60x60.png" /></a></center><br/>
+      <center><p>sardines1</p></center></td>
+      <td><center><h3 class="header3">Opinion about sardines1:</h3></center><br/>
+      <p>sardines1 was the first person I met on Scratch. I didn't know much about Scratch at the time, so I thought sardines1 was a greeter when you first use Scratch. After learning a bit about Scratch, I realized there was no such thing as a greeter and sardines1 was being a kind person. I'm glad there were people like sardines1 giving new Scratchers the treatment they deserve. But I'm a little disappointed when I found out there wasn't a greeter on Scratch.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/perrycollinp/"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/64724075_60x60.png" /></a></center><br/>
+      <center><p>perrycollinp</p></center></td>
+      <td><center><h3 class="header3">Opinion about perrycollinp:</h3></center><br/>
+      <p>I barely knew perrycollinp. Before he and I got to know each other better, Perry left Scratch. But between that brief time were perrycollinp and I met and when he left, we had a good time getting to know each other. And he was a kind man. perrycollinp, a man gone too soon.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/TacticalCorn/"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/72867255_60x60.png" /></a></center><br/>
+      <center><p>TacticalCorn</p></center></td>
+      <td><center><h3 class="header3">Opinion about TacticalCorn:</h3></center><br/>
+      <p>TacticalCorn is a nice guy. Despite the fact that Tactical has about 100 followers, he has been accepted in many different famous series. We don't really talk anymore, but Tacitcal is trying to rekindle the friendship by creating a series with me. That didn't work out at all. So, I decided to have him help me out with my movie. What's it about? No one knows.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/JoeThrontonFan19/"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/76090990_60x60.png" /></a></center><br/>
+      <center><p>JoeThrontonFan19</p></center></td>
+      <td><center><h3 class="header3">Opinion about JoeThrontonFan19:</h3></center><br/>
+      <p>JoeThrontonFan19 is a great guy. He's a Sharks fan and I'm a Knights fan. However, we don't care what hockey team we like. We just care on being friends. In fact, me and JoeThrontonFan19 are creating a momvement where no matter what hockey team you like, you can always be friends with anyone.</p></td>
+    </tr>
+    <tr>
+      <td><center><a href="https://scratch.mit.edu/users/marshmellothelegend"><img class="TinyImages" src="https://cdn2.scratch.mit.edu/get_image/user/60418635_60x60.png" /></a></center><br/>
+      <center><p>marshmellothelegend</p></center></td>
+      <td><center><h3 class="header3">Opinion about marshmellothelegend:</h3></center><br/>
+      <p>I met marshmellothelegend when I saw lisabc follow her. At first, I thought marshmellothelegend was lisabc's alt. Mainly because they both were kind to me. But I was wrong. marshmellothelegend is lisabc's friend.</p></td>
+    </tr>
+    </table>
+    <center><p>It looks like you've reached the end of the friends page, if you are a friend of mine, but didn't see your pfp on this page, please don't hesitate to <a href="https://scratch.mit.edu/users/Legoman_Animator">let me know</a>.</p></center>
+    </div>
+    <div class="rightside">
+      <marquee><h2 class="header2">Questions about Legoman_Animator's friends!</h2></marquee>
+      <div class="questions">
+        <p>1. Who is Legoman's most famous friend?</p>
+        <form>
+          <div id="Answer"> </div>
+        <input type="radio" name="Facts" value="Nope"> <span class="question-type">A. PaddlerGames</span><br/>
+        <input type="radio" name="Facts" value="Nope"> <span class="question-type">B. AlexStudiosInc</span> <br/>
+        <input type="radio" name="Facts" value="Nope"> <span class="question-type">C. Dinoboi_Animations</span> <br/>
+        <input type="radio" name="Facts" value="Yep!"> <span class="question-type">D. lisabc</span> <br/>
+        <input onclick="Response()" class="button" type="button" value="Submit">
+        </form>
+      </div>
+      <div class="questions">
+        <p>2. (1 of 2) Which one of Legoman's friends was originally a fan?</p>
+        <form>
+          <div id="Part1"> </div>
+        <input type="radio" name="One" value="Right!"> <span class="question-type">A. marshmello3_4</span> <br/>
+        <input type="radio" name="One" value="Denied"> <span class="question-type">B. Ace-of-Space</span> <br/>
+        <input type="radio" name="One" value="Denied"> <span class="question-type">C. Lightning-Animates</span> <br/>
+        <input type="radio" name="One" value="Denied"> <span class="question-type">D. N0tT0kyo</span> <br/>
+        <input onclick="AnswerOne()" class="button" type="button" value="Submit">
+        </form>
+      </div>
+      <div class="questions">
+        <p>3. (2 of 2) Which one of Legoman's friends was originally a fan?</p>
+        <form>
+          <div id="Part2"> </div>
+        <input type="radio" name="Two" value="No way!"> <span class="question-type">A. DaBrokenToast</span> <br/>
+        <input type="radio" name="Two" value="Correctamundo!"> <span class="question-type">B. gamerguy671</span> <br/>
+        <input type="radio" name="Two" value="No way!"> <span class="question-type">C. NotYourAverageAnime</span> <br/>
+        <input type="radio" name="Two" value="No way!"> <span class="question-type">D. -Sawk-</span> <br/>
+        <input onclick="AnswerTwo()" class="button" type="button" value="Submit">
+        </form>
+      </div>
+      <div class="questions">
+        <p>4. Which two people were friends with each other before becoming friends with Legoman?</p>
+        <form>
+          <div id="Odd"> </div>
+        <input type="radio" name="Wired" value="Nah"> <span class="question-type">A. AlexStudiosInc and sardines1</span> <br/>
+        <input type="radio" name="Wired" value="Nah"> <span class="question-type">B. mccdag and dalmatian31</span> <br/>
+        <input type="radio" name="Wired" value="Yes"> <span class="question-type">C. Dinoboi_Animations and NotYourAverageAnime</span> <br/>
+        <input type="radio" name="Wired" value="Nah"> <span class="question-type">D. TacticalCorn and DaBrokenToast</span> <br/>
+        <input onclick="Reply()" class="button" type="button" value="Submit">
+        </form>
+      </div>
+      <div class="questions">
+        <p>5. Who was Legoman's first friend?</p>
+        <form>
+        <div id="reply"> </div>
+      <input type="radio" name="Trivia" value="Sorry, but that's not right."> <span class="question-type">A. sardines1 </span> <br/>
+      <input type="radio" name="Trivia" value="Sorry, but that's not right."> <span class="question-type">B. SchawnnaraJ </span> <br/>
+      <input type="radio" name="Trivia" value="Right you are!"> <span class="question-type">C. Mariobrosfanclub </span> <br/>
+      <input type="radio" name="Trivia" value="Sorry, but that's not right."> <span class="question-type">D. Ace-of-Space </span> <br/>
+      <input onclick="answers()" class="button" type="button" value="Submit">
+    </form>
+    </div>
+    <div class="questions">
+      <p>6. With JoeThrontonFan19, what is Legoman trying to achieve?</p>
+      <form>
+        <div id="Hockey"> </div>
+      <input type="radio" name="NHL" value="Not even close"> <span class="question-type">A. Giving new Scratchers a chance </span> <br/>
+      <input type="radio" name="NHL" value="Not even close"> <span class="question-type">B. Getting people excited about playing sports </span> <br/>
+      <input type="radio" name="NHL" value="BOOM!"> <span class="question-type">C. Helping people become friends, despite what hockey team they like. </span> <br/>
+      <input type="radio" name="NHL" value="Not even close"> <span class="question-type">D. Getting rid of pollution in the ocean. </span> <br/>
+      <input onclick="MAF()" class="button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="questions">
+      <p>7. Which one of Legoman's friends would do anything for him?</p>
+      <form>
+        <div id="All"> </div>
+      <input type="radio" name="Freebie" value="allCorrect"> <span class="question-type">A. NotYourAverageAnime</span> <br/>
+      <input type="radio" name="Freebie" value="allCorrect"> <span class="question-type">B. Dinoboi_Animations</span> <br/>
+      <input type="radio" name="Freebie" value="allCorrect"> <span class="question-type">C. gamerguy671</span> <br/>
+      <input type="radio" name="Freebie" value="allCorrect"> <span class="question-type">D. marshmello3_4</span> <br/>
+      <input type="radio" name="Freebie" value="allCorrect"> <span class="question-type">E. DaBrokenToast</span> <br/>
+      <input type="radio" name="Freebie" value="allCorrect"> <span class="question-type">F. N0tT0kyo</span> <br/>
+      <input type="radio" name="Freebie" value="allCorrect"> <span class="question-type">G. All of them.</span> <br/>
+      <input onclick="Easy()" class="button" type="button" value="Submit">
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
