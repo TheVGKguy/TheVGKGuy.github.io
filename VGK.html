@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="VGK.css"/>
+    <title>Vegas Golden Knights Website</title>
+    <script>
+      function answer() {
+      var radio = document.getElementsByName("Hockey");
+      var selection = false;
+      var message = "";
+      for( var i=0; i<radio.length; i++) {
+        if(radio[i].value == "Yes" && radio[i].checked == true) {
+          selection = true;
+        }
+      }
+        if(selection == true) {
+          message = message + "<b><p style='color:#90EE90'>You're right! </p> </b>"
+        } else {
+          message = message + "<b><p style='color:red'>Incorrect </p> </b>"
+        }
+        document.getElementById("Question").innerHTML = message;
+    }
+    function Reply() {
+      var radio = document.getElementsByName("Stars");
+      var selection = false;
+      var message = "";
+      for( var i=0; i<radio.length; i++) {
+        if(radio[i].value == "Yep" && radio[i].checked == true) {
+          selection = true;
+        }
+      }
+        if(selection == true) {
+          message = message + "<b><p style='color:#90EE90'>Correct! </p> </b>"
+        } else {
+          message = message + "<b><p style='color:red'>Close, but no </p> </b>"
+        }
+        document.getElementById("questions").innerHTML = message;
+    }
+    function Answers() {
+      var radio = document.getElementsByName("Cup");
+      var selection = false;
+      var message = "";
+      for( var i=0; i<radio.length; i++) {
+        if(radio[i].value == "Up" && radio[i].checked == true) {
+          selection = true;
+        }
+      }
+        if(selection == true) {
+          message = message + "<b><p style='color:#90EE90'>Right you are! Dang Capitals!</p> </b>"
+        } else {
+          message = message + "<b><p style='color:red'>No, but you're on the right track</p> </b>"
+        }
+        document.getElementById("Hockey").innerHTML = message;
+    }
+    function Quick() {
+      var radio = document.getElementsByName("Asking");
+      var selection = false;
+      var message = "";
+      for( var i=0; i<radio.length; i++) {
+        if(radio[i].value == "Yah" && radio[i].checked == true) {
+          selection = true;
+        }
+      }
+        if(selection == true) {
+          message = message + "<b><p style='color:#90EE90'>Correctamundo!</p> </b>"
+        } else {
+          message = message + "<b><p style='color:red'>Actually, he was traded.</p> </b>"
+        }
+        document.getElementById("Retire").innerHTML = message;
+    }
+    function Win() {
+      var radio = document.getElementsByName("Next");
+      var selection = false;
+      var message = "";
+      for( var i=0; i<radio.length; i++) {
+        if(radio[i].value == "Corr" && radio[i].checked == true) {
+          selection = true;
+        }
+      }
+        if(selection == true) {
+          message = message + "<b><p style='color:#90EE90'>Yes, siree!</p> </b>"
+        } else {
+          message = message + "<b><p style='color:yellow'>You're right there!</p> </b>"
+        }
+        document.getElementById("All").innerHTML = message;
+    }
+    function Mark() {
+      var radio = document.getElementsByName("Stone");
+      var selection = false;
+      var message = "";
+      for( var i=0; i<radio.length; i++) {
+        if(radio[i].value == "Plus" && radio[i].checked == true) {
+          selection = true;
+        }
+      }
+        if(selection == true) {
+          message = message + "<b><p style='color:#90EE90'>That's the correct number</p> </b>"
+        } else {
+          message = message + "<b><p style='color:red'>Denied!</p> </b>"
+        }
+        document.getElementById("Numb").innerHTML = message;
+    }
+    function Slick() {
+      var radio = document.getElementsByName("Bomb");
+      var selection = false;
+      var message = "";
+      for( var i=0; i<radio.length; i++) {
+        if(radio[i].value == "Negative" && radio[i].checked == true) {
+          selection = true;
+        }
+      }
+        if(selection == true) {
+          message = message + "<b><p style='color:#90EE90'>It was the first time.</p> </b>"
+        } else {
+          message = message + "<b><p style='color:red'>They had a chance during that season</p> </b>"
+        }
+        document.getElementById("Lost").innerHTML = message;
+    }
+      function Funny() {
+      var radio = document.getElementsByName("Bored");
+      var selection = false;
+      var message = "";
+      for( var i=0; i<radio.length; i++) {
+        if(radio[i].value == "True" && radio[i].checked == true) {
+          selection = true;
+        }
+      }
+        if(selection == true) {
+          message = message + "<b><p style='color:#90EE90'>Yes. And the VGK players were willing to help out.</p> </b>"
+        } else {
+          message = message + "<b><p style='color:red'>Really?</p> </b>"
+        }
+        document.getElementById("Laugh").innerHTML = message;
+    }
+    function Dang() {
+      var radio = document.getElementsByName("Craking");
+      var selection = false;
+      var message = "";
+      for( var i=0; i<radio.length; i++) {
+        if(radio[i].value == "Pro" && radio[i].checked == true) {
+          selection = true;
+        }
+      }
+        if(selection == true) {
+          message = message + "<b><p style='color:#90EE90'>They never lost to the rookies</p> </b>"
+        } else {
+          message = message + "<b><p style='color:red'>Unfortunately, no</p> </b>"
+        }
+        document.getElementById("Truth").innerHTML = message;
+    }
+    function It() {
+      var radio = document.getElementsByName("Nice");
+      var selection = false;
+      var message = "";
+      for( var i=0; i<radio.length; i++) {
+        if(radio[i].value == "Pre" && radio[i].checked == true) {
+          selection = true;
+        }
+      }
+        if(selection == true) {
+          message = message + "<b><p style='color:#90EE90'>Truth! Thanks for doing my quiz!</p> </b>"
+        } else {
+          message = message + "<b><p style='color:red'>You can't be serious</p> </b>"
+        }
+        document.getElementById("Got").innerHTML = message;
+    }
+    </script>
+  </head>
+  <body class="body">
+    <h1>The Vegas Golden Knights Website</h1>
+    <nav>
+      <ul class="navmenu">
+        <li class="navitem"><a href="VGKPlayers.html">Players</a></li>
+        <li class="navitem"><a href="VGKGames.html">Games</a></li>
+        <li class="navitem"><a href="VGKNews.html">News</a></li>
+      </ul>
+    </nav>
+    <center><img id="Image" src="data:image/jpeg;base64,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"/></center>
+    <h2>The Origin of the Vegas Golden Knights</h2>
+    <p> A few weeks after the devestating Route 91 Harvest music festival on October 1, 2017, the soon to be players of the Vegas Golden Knights helped the city of Las Vegas any way they could, even though the players weren't from Nevada. This kind act from the players made people like the Vegas Golden Knights. And when the hockey season started, the Vegas Golden Knights were met by thousands and thousands of cheering fans, hoping the team will win the Stanley Cup. Even though the Vegas Golden Knights didn't win the trophy, the players were appriciated for their actions during the October 1st shooting.</p>
+    <br/>
+    <h2>Vegas Golden Knights Quiz</h2>
+    <p>Think you know the Vegas Golden Knights? Take this quiz to find out!</p>
+    <div class="quiz">
+      <p>1. Who was the first goalie to play for the Vegas Golden Knights?</p>
+      <form>
+        <div id="Question"></div>
+        <input type="radio" name="Hockey" value="No"><span class="question-type">A. Malcolm Subban</span><br/>
+        <input type="radio" name="Hockey" value="No"><span class="question-type">B. Oscar Dansk</span><br/>
+        <input type="radio" name="Hockey" value="Yes"><span class="question-type">C. Marc-Andre Fleury</span><br/>
+        <input type="radio" name="Hockey" value="No"><span class="question-type">D. Maxime Lagace</span><br/>
+        <input onclick="answer()" class="Button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="quiz">
+      <p>2. When was the first game of the Vegas Golden Knights?</p>
+      <form>
+        <div id="questions"></div>
+        <input type="radio" name="Stars" value="Not"><span class="question-type">A. November 12, 2017</span><br/>
+        <input type="radio" name="Stars" value="Yep"><span class="question-type">B. October 6, 2017</span><br/>
+        <input type="radio" name="Stars" value="Not"><span class="question-type">C. September 29, 2017</span><br/>
+        <input type="radio" name="Stars" value="Not"><span class="question-type">D. October 18, 2017</span><br/>
+        <input onclick="Reply()" class="Button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="quiz">
+      <p>3. In their first season, who did the Vegas Golden Knights lose the Stanley Cup to?</p>
+      <form>
+        <div id="Hockey"></div>
+        <input type="radio" name="Cup" value="Up"><span class="question-type">A. Washington Capitals</span><br/>
+        <input type="radio" name="Cup" value="Down"><span class="question-type">B. San Jose Sharks</span><br/>
+        <input type="radio" name="Cup" value="Down"><span class="question-type">C. Los Angeles Kings</span><br/>
+        <input type="radio" name="Cup" value="Down"><span class="question-type">D. Tampa Bay Lightning</span><br/>
+        <input onclick="Answers()" class="Button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="quiz">
+      <p>4. Who was the first Vegas Golden Knights player to retire?</p>
+      <form>
+        <div id="Retire"></div>
+        <input type="radio" name="Asking" value="Nah"><span class="question-type">A. Ryan Reaves</span><br/>
+        <input type="radio" name="Asking" value="Nah"><span class="question-type">B. Cody Eakin</span><br/>
+        <input type="radio" name="Asking" value="Nah"><span class="question-type">C. Paul Stastny</span><br/>
+        <input type="radio" name="Asking" value="Yah"><span class="question-type">D. Deryk Engelland</span><br/>
+        <input onclick="Quick()" class="Button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="quiz">
+      <p>5. Who started his NHL carrer with the Vegas Golden Knights?</p>
+      <form>
+        <div id="All"></div>
+        <input type="radio" name="Next" value="Incorr"><span class="question-type">A. Cody Glass</span><br/>
+        <input type="radio" name="Next" value="Incorr"><span class="question-type">B. Zach Whitecloud</span><br/>
+        <input type="radio" name="Next" value="Incorr"><span class="question-type">C. Peyton Krebs</span><br/>
+        <input type="radio" name="Next" value="Corr"><span class="question-type">D. All of the above</span><br/>
+        <input onclick="Win()" class="Button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="quiz">
+      <p>6. What was the number of the Vegas Golden Knights' captain, Mark Stone?</p>
+      <form>
+        <div id="Numb"></div>
+        <input type="radio" name="Stone" value="Plus"><span class="question-type">A. 61</span><br/>
+        <input type="radio" name="Stone" value="Minus"><span class="question-type">B. 67</span><br/>
+        <input type="radio" name="Stone" value="Minus"><span class="question-type">C. 5</span><br/>
+        <input type="radio" name="Stone" value="Minus"><span class="question-type">D. 75</span><br/>
+        <input onclick="Mark()" class="Button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="quiz">
+      <p>7. The Golden Knights lost their chance to compete for the Stanley Cup on which season?</p>
+      <form>
+        <div id="Lost"></div>
+        <input type="radio" name="Bomb" value="Positive"><span class="question-type">A. Third</span><br/>
+        <input type="radio" name="Bomb" value="Positive"><span class="question-type">B. Second</span><br/>
+        <input type="radio" name="Bomb" value="Negative"><span class="question-type">C. Fifth</span><br/>
+        <input type="radio" name="Bomb" value="Positive"><span class="question-type">D. Fourth</span><br/>
+        <input onclick="Slick()" class="Button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="quiz">
+      <p>8. What tragedy happened before the Golden Knight's first game?</p>
+      <form>
+        <div id="Laugh"></div>
+        <input type="radio" name="Bored" value="False"><span class="question-type">A. Chicago Fire</span><br/>
+        <input type="radio" name="Bored" value="True"><span class="question-type">B. October First Shooting</span><br/>
+        <input type="radio" name="Bored" value="False"><span class="question-type">C. COVID-19</span><br/>
+        <input type="radio" name="Bored" value="False"><span class="question-type">D. The Simpsons 31st season</span><br/>
+        <input onclick="Funny()" class="Button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="quiz">
+      <p>9. During their fifth season, who did the Vegas Golden Knights always beat?</p>
+      <form>
+        <div id="Truth"></div>
+        <input type="radio" name="Craking" value="Con"><span class="question-type">A. Buffalo Sabres</span><br/>
+        <input type="radio" name="Craking" value="Con"><span class="question-type">B. Dallas Stars</span><br/>
+        <input type="radio" name="Craking" value="Pro"><span class="question-type">C. Seattle Kraken</span><br/>
+        <input type="radio" name="Craking" value="Con"><span class="question-type">D. Calgary Flames</span><br/>
+        <input onclick="Dang()" class="Button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="quiz">
+      <p>10. (Freebie) Who was the best hockey player of the Vegas Golden Knights</p>
+      <form>
+        <div id="Got"></div>
+        <input type="radio" name="Nice" value="Anti"><span class="question-type">A. Tom Brady</span><br/>
+        <input type="radio" name="Nice" value="Anti"><span class="question-type">B. Micheal Jordan</span><br/>
+        <input type="radio" name="Nice" value="Anti"><span class="question-type">C. Robin Williams</span><br/>
+        <input type="radio" name="Nice" value="Pre"><span class="question-type">D. Anyone who has been on the Vegas Golden Knights</span><br/>
+        <input onclick="It()" class="Button" type="button" value="Submit">
+      </form>
+    </div>
+    <p>Hope you enjoyed reading my website and doing my quiz.</p>
+  </body>
+</html>

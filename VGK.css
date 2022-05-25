@@ -1,0 +1,88 @@
+h1 {
+  color: #FFD700;
+  font-family: serif;
+}
+h2 {
+  color: #FFD700;
+  font-family: serif;
+}
+h3 {
+  color: #FFD700;
+  font-family: serif;
+}
+h4 {
+  color: #FFD700;
+  font-family: serif;
+}
+th {
+  color: #FFD700;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+td {
+  color: #FFD700;
+  font-family: sans-serif;
+}
+p {
+  color: #FFD700;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+li {
+  color: #FFD700;
+  font-family: sans-serif;
+}
+.navitem {
+  list-style-type: none;
+  display: inline;
+  margin-right: 3em;
+  padding: 2px 5px;
+}
+.body {
+  background-color: #000000;
+}
+.navmenu {
+  text-align: center;
+  background-color: #FFD700;
+  color: #000000;
+}
+.Nodot {
+  list-style-type: none;
+}
+.Images {
+  width: 300px;
+}
+.quiz {
+  border-radius: 15px;
+  border-color: #FFD700;
+  border-style: solid;
+  padding: 15px;
+}
+.question-type {
+  font-size: 18px;
+  color: #FFD700;
+  font-weight: bold;
+}
+.Button {
+  height: 25px;
+  width: 25%;
+  color: #FFD700;
+  background-color: #000000;
+  border-radius: 20px;
+  border-color: #FFD700;
+}
+#Image {
+  width: 500px;
+}
+a:link {
+  color: #000000;
+}
+a:visited {
+  color: #000000;
+}
+a:hover {
+  color: #000000;
+}
+a:active {
+  color: #000000;
+}
