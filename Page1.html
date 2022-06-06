@@ -52,6 +52,22 @@
         }
         document.getElementById("Cool").innerHTML = message;
     }
+    function Done() {
+      var rado = document.getElementsByName("Quip");
+      var selec = false;
+      var message = "";
+      for( var i=0; i<rado.length; i++) {
+        if(rado[i].value == "Si" && rado[i].checked == true) {
+          selec = true;
+        }
+      }
+        if(selec == true) {
+          message = message + "<b><p style='color:yellow'>Yes. And it was the weirdest thing</p> </b>"
+        } else {
+          message = message + "<b><p style='color:yellow'>It was lower than that</p> </b>"
+        }
+        document.getElementById("lisabc").innerHTML = message;
+    }
   </script>
   </head>
    <body class="background">
@@ -61,10 +77,11 @@
         <li class="navitem"> <a href="Page2.html"> Legoman's projects </a> </li>
         <li class="navitem"> <a href="Page3.html"> Legoman's friends </a> </li>
         <li class="navitem"> <a href="Page4.html"> Fanarts of Legoman </a> </li>
+        <li class="navitem"> <a href="Page5.html"> News (new)</a> </li>
       </ul>
     </nav>
     </header> <br>
-    <h1 class="header1"> The Legacy of Legoman_Animator</h1>
+    <h1> The Legacy of Legoman_Animator</h1>
     <hr/>
       <center> <img class="image" src="https://cdn2.scratch.mit.edu/get_image/user/74239849_60x60.png"/> </center>
     <hr/>
@@ -83,34 +100,34 @@
       <img class="listImages" src="https://cdn2.scratch.mit.edu/get_image/project/560136999_480x360.png">
       </ul>
     <p> To see these things, go to the menu and click on the links. Otherwise, keep scrolling.</p>
-    <h2 class="header2">Legoman's Origin</h2>
+    <h2>Legoman's Origin</h2>
     <p>Legoman knew about Scratch when his science teacher recommended the site for Legoman's "growing mind." So, Legoman visited the site and joined Scratch with the username Linkinparklover2134. One month later, Legoman decided that Linkinparklover2134 was not a good username, so Legoman looked around for a different idea for a username. He set his eyes on "The Adventures of Legoman," a comic book Legoman was working on. At that moment, Legoman_Animator was born. A lot of Legoman's friends from Linkinparklover2134 thought that the username was better than the other username, so Legoman stuck with Legoman_Animator while deleting Linkinparklover2134.</p>
-    <h2 class="header2">Frequently Asked Questions about Legoman</h2>
-    <h3 class="header3">How many studios are you joining? Why?</h3>
+    <h2>Frequently Asked Questions about Legoman</h2>
+    <h3>How many studios are you joining? Why?</h3>
     <p>Just one, my fanclub. I stick with one because I can't take how many times studio activity messages appear in my mailbox.</p>
-    <h3 class="header3">How many messages do you get in a day?</h3>
+    <h3>How many messages do you get in a day?</h3>
     <p>20 or 30. But, for some reason, when lisabc followed me, I had 10 messages that day.</p>
-    <h3 class="header3">Are you a Fred or a Huskador?</h3>
+    <h3>Are you a Fred or a Huskador?</h3>
     <p>What?</p>
-    <h3 class="header3">Who is your favorite Scratcher?</h3>
+    <h3>Who is your favorite Scratcher?</h3>
     <p>Dinoboi_Animations.</p>
-    <h3 class="header3">Where did you get the name "Legoman_Animator?"</h3>
+    <h3>Where did you get the name "Legoman_Animator?"</h3>
     <p>The answer is above you.</p>
-    <h3 class="header3">How long does it take for you to create an animation?</h3>
+    <h3>How long does it take for you to create an animation?</h3>
     <p>It depends on a number of factors. If I want it to be long with plenty of lip-syncing, then 2-4 weeks. If I want it short with no lip-syncing, then 5 days.</p>
-    <h3 class="header3">If you could learn any coding language, which one would it be?</h3>
+    <h3>If you could learn any coding language, which one would it be?</h3>
     <p>HTML or Javascript. Those two coding languages can create many fancy websites.</p>
-    <h3 class="header3">What advice do you have for new Scratchers that will help them on Scratch?</h3>
+    <h3>What advice do you have for new Scratchers that will help them on Scratch?</h3>
     <p>If you feel like giving up, don't. Just because you hit a rough patch on Scratch doesn't mean no one cares about you on Scratch.</p>
-    <h3 class="header3">Have you learned anything while being on Scratch?</h3>
+    <h3>Have you learned anything while being on Scratch?</h3>
     <p>I learned many things on Scrtach. Ironically, how to code isn't one of them.</p>
-    <h3 class="header3">Were you abducted by an alien and turned into a lego or do you build lego people for a lego war?</h3>
+    <h3>Were you abducted by an alien and turned into a lego or do you build lego people for a lego war?</h3>
     <p>Neither. I was a normal person who fell into a vat of Legos.</p>
-    <h3 class="header3">Can you subscribe to me on Youtube?</h3>
+    <h3>Can you subscribe to me on Youtube?</h3>
     <p>I don't have a Youtube account.</p>
     </div>
     <div class="rightside">
-    <marquee><h2 class="header2">Questions about Legoman_Animator!</h2></marquee>
+    <marquee><h2>Questions about Legoman_Animator!</h2></marquee>
     <div class="questions">
     <p> 1. What was Legoman's first account name?</p>
     <form>
@@ -142,6 +159,17 @@
     <input type="radio" name="Quiz" value="Really?"> <span class="question-type">C. 4 hours</span> <br/>
     <input type="radio" name="Quiz" value="Really?"> <span class="question-type">D. No idea.</span> <br/>
     <input onclick="answering()"  class="button" type="button" value="Submit">
+      </form>
+    </div>
+    <div class="questions">
+      <p>4. How many messages did Legoman get when lisabc followed him?</p>
+      <form>
+        <div id="lisabc"></div>
+    <input type="radio" name="Quip" value="No"> <span class="question-type">A. 30</span> <br/>
+    <input type="radio" name="Quip" value="No"> <span class="question-type">B. 20</span> <br/>
+    <input type="radio" name="Quip" value="No"> <span class="question-type">C. 50</span> <br/>
+    <input type="radio" name="Quip" value="Si"> <span class="question-type">D. 10</span> <br/>
+    <input onclick="Done()" class="button" type="button" value="Submit">
       </form>
     </div>
     </div>
