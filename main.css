@@ -8,6 +8,12 @@ ul{
     font-size:23px;
     font-weight: normal;
     }
+th {
+  color: yellow;
+  background-color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
 .Boldify {
   font-size: 20px;
   font-weight: bold;
@@ -71,17 +77,21 @@ ul{
   float: left;
   width: 68%;
 }
-.header1 {
+h1 {
   color: yellow;
   font-family: sans-serif;
 }
-.header2 {
+h2 {
   color: yellow;
   font-family: serif;
 }
-.header3 {
+h3 {
   color: yellow;
   font-family: sans-serif;
+}
+h4 {
+  color: yellow;
+  font-family: serif;
 }
 .clearfloat {
   clear: right;
@@ -93,13 +103,23 @@ ul{
 .BigImages {
   width: 350px;
 }
-th {
-  color: yellow;
-  background-color: red;
-  font-size: 25px;
-  font-weight: bold;
-}
 .TinyImages {
   width: 200px;
   height: 200px;
+}
+.manuscript {
+  font-family: sans-serif;
+}
+.Normal {
+  list-style-type: none;
+  font-size: 25px;
+  color: yellow;
+  text-decoration: none;
+}
+.Overflow {
+  height: 360px;
+  overflow: auto;
+  border-radius: 10px;
+  border-color: yellow;
+  border-style: double;
 }
