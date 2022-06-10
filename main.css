@@ -116,9 +116,7 @@ h4 {
   color: yellow;
   text-decoration: none;
 }
-.Overflow {
-  height: 360px;
-  overflow: auto;
+.Double {
   border-radius: 10px;
   border-color: yellow;
   border-style: double;
