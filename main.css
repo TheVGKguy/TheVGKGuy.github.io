@@ -109,6 +109,9 @@ h4 {
 }
 .manuscript {
   font-family: sans-serif;
+  color: yellow;
+  font-size: 23px;
+  font-weight: normal;
 }
 .Normal {
   list-style-type: none;
